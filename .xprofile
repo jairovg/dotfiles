@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+setbg & # Set the background
+dunst & # Dunst for notifications
+

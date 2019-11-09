@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# Set the background . If given an argument, will set the file as background.
+[ ! -z "$1" ] && cp "$1" ~/.config/wall.jpg && notify-send -i "$HOME/.config/wall.jpg" "Wallpaper changed."
+xwallpaper --zoom ~/.config/wall.jpg

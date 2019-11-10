@@ -1,0 +1,35 @@
+# Theme setup
+#
+#   normal: normal row
+#   urgent: highlighted row (urgent)
+#   active: highlighted row (active)
+#
+# For each state, the following 5 colors must be set:
+#
+#   bg: background color row
+#   fg: text color
+#   bgalt: background color alternating row
+#   hlfg: foreground color selected row
+#   hlbg: background color selected row
+
+rofi.color-enabled: true
+
+! State:           ´bg´,    ´fg´,    ´bgalt´, ´hlbg´,  ´hlfg´
+rofi.color-normal: #282828, #a89984, #32302f, #665c57, #fbf1c7
+rofi.color-active: #d79921, #282828, #d79921, #fabd2f, #282828
+rofi.color-urgent: #cc241d, #282828, #fb4934, #008ed4, #890661
+
+!                  ´background´, ´border´, ´separator´
+rofi.color-window: #cc282828,    #a89984,  #a89984
+
+rofi.lines: 3
+rofi.fixed-num-lines: true
+rofi.width: 100
+rofi.fullscreen: true
+# Padding, depending on the resolution, this needs to change
+rofi.padding: 340
+# Border width
+rofi.bw: 0
+# Row height
+rofi.eh: 1
+rofi.hide-scrollbar: true

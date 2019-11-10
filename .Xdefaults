@@ -1,4 +1,4 @@
-!! Set the vackground, foreground and cursor colors as below:
+!! Set the background, foreground and cursor colors as below:
 *.background: #282828
 *.foreground: #ffffff
 *.cursorColor: #ffffff
@@ -25,6 +25,7 @@
 URxvt.intensityStyles: false
 URxvt.depth: 32
 URxvt.background: [80]#000000
+URxvt.foreground: #ebdbb2
 URxvt.font: xft:monospace:size=11
 URxvt.scrollBar: false
 URxvt.cursorColor: #ffffff

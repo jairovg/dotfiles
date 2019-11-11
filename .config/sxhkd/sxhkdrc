@@ -1,3 +1,5 @@
 # Basic binds
 super + Return
   $TERMINAL
+super + d
+  rofi -combi-modi window,drun -show combi -modi combi

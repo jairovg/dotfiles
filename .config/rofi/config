@@ -23,9 +23,7 @@ rofi.color-urgent: #cc241d, #282828, #fb4934, #008ed4, #890661
 rofi.color-window: #cc282828,    #a89984,  #a89984
 
 rofi.lines: 3
-rofi.fixed-num-lines: true
 rofi.width: 100
-rofi.fullscreen: true
 # Padding, depending on the resolution, this needs to change
 rofi.padding: 340
 # Border width

@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# A rofi binary prompt script.
+# Gives a rofi prompt labeled with $1 to perform command $2.
+# For example:
+# './prompt "Do you want to shutdown?" "shutdown -h now"'
+
+[ "$(printf "No\nYes" | rofi -dmenu -location 1 -lines 2 -padding 5 -color-window \#282828 -mesg "$1")" = "Yes"  ] && $2
+

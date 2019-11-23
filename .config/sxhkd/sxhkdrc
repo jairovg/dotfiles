@@ -3,3 +3,7 @@ super + Return
   $TERMINAL
 super + d
   rofi -combi-modi window,drun -show combi -modi combi
+
+# More
+super + shift + Tab
+  menuunicode

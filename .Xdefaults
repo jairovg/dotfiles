@@ -22,6 +22,9 @@
 *.color14: #8ec07c
 *.color15: #ebdbb2
 
+Sxiv.background: #282828
+Sxiv.foreground: #ffffff
+
 URxvt.intensityStyles: false
 URxvt.depth: 32
 URxvt.background: [80]#000000

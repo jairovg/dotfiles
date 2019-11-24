@@ -5,3 +5,4 @@
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export EDITOR="vim"
 export TERMINAL="urxvt"
+export BROWSER="google-chrome-stable"

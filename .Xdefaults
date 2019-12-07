@@ -32,3 +32,5 @@ URxvt.foreground: #ebdbb2
 URxvt.font: xft:monospace:size=11
 URxvt.scrollBar: false
 URxvt.cursorColor: #ffffff
+URxvt.iso14755: false
+URxvt.iso14755_52: false

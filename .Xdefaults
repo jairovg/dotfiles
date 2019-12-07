@@ -34,3 +34,19 @@ URxvt.scrollBar: false
 URxvt.cursorColor: #ffffff
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+
+!! Extensions, default Meta key: Alt
+URxvt.perl-ext-common: default,matcher,resize-font,url-select,keyboard-select
+URxvt.colorURL: #4682B4
+!! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: linkhandler
+URxvt.url-select.underline: true
+!! keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+!! Matcher
+URxvt.url-launcher: linkhandler
+URxvt.matcher.button: 1

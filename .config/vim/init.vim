@@ -36,3 +36,6 @@ call plug#end()
 " Disables automatic commenting on newline:
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+" vim-airline
+  let g:airline_powerline_fonts=1
+

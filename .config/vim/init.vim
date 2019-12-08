@@ -39,3 +39,8 @@ call plug#end()
 " vim-airline
   let g:airline_powerline_fonts=1
 
+" Set tab as spaces
+  set tabstop=2
+  set shiftwidth=2
+  set expandtab
+

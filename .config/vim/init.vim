@@ -54,3 +54,6 @@ call plug#end()
 " Ignore .gitignore files
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
+" Update binds when sxhkdrc is updated.
+  autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
+

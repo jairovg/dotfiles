@@ -44,3 +44,7 @@ call plug#end()
   set shiftwidth=2
   set expandtab
 
+" Copy and paste to clipboard
+  vnoremap <C-C> :w !xclip -i -selection primary<CR><CR>
+  nnoremap <C-V> :r !xclip -o -selection primary<CR><CR>
+

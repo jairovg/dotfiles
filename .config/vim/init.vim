@@ -48,3 +48,6 @@ call plug#end()
   vnoremap <C-C> :w !xclip -i -selection primary<CR><CR>
   nnoremap <C-V> :r !xclip -o -selection primary<CR><CR>
 
+" Automatically deletes all trailing whitespace on save.
+  autocmd BufWritePre * %s/\s\+$//e
+

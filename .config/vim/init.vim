@@ -51,3 +51,6 @@ call plug#end()
 " Automatically deletes all trailing whitespace on save.
   autocmd BufWritePre * %s/\s\+$//e
 
+" Ignore .gitignore files
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+

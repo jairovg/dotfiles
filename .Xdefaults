@@ -29,7 +29,7 @@ URxvt.intensityStyles: false
 URxvt.depth: 32
 URxvt.background: [80]#000000
 URxvt.foreground: #ebdbb2
-URxvt.font: xft:monospace:size=11
+URxvt.font: xft:monospace:size=13, xft:Droid Sans Mono for Powerline:size=13
 URxvt.scrollBar: false
 URxvt.cursorColor: #ffffff
 URxvt.iso14755: false

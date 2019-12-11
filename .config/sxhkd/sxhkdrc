@@ -7,6 +7,8 @@ super + r
   $TERMINAL -e $FILE
 super + n
   $TERMINAL -e newsboat
+super + i
+  $TERMINAL -e htop
 
 # More
 super + shift + Tab

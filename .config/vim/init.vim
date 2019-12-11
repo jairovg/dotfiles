@@ -52,6 +52,7 @@ call plug#end()
   if getcwd() == $HOME
     let g:magit_git_cmd="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
   endif
+  autocmd VimEnter * nnoremap ,M :call magit#show_magit('h')<CR>
 
 " Automatically deletes all trailing whitespace on save.
   autocmd BufWritePre * %s/\s\+$//e

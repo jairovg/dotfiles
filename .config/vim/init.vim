@@ -24,6 +24,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mattn/emmet-vim'
 Plug 'plasticboy/vim-markdown'
+Plug 'gabesoft/vim-ags'
 call plug#end()
 
 " Some basics:

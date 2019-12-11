@@ -35,7 +35,7 @@ bindsym $mod+Shift+t  gaps inner current set 5; gaps outer current set 5
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+F2 restart
 
 # change focus
 bindsym $mod+h focus left
@@ -146,8 +146,8 @@ mode "resize" {
   # back to normal: Enter or Escape or $mod+r
   bindsym Return mode "default"
   bindsym Escape mode "default"
-  bindsym $mod+r mode "default"
+  bindsym $mod+Shift+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+Shift+r mode "resize"
 

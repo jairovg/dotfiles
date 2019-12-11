@@ -48,11 +48,19 @@ call plug#end()
   vnoremap <C-C> :w !xclip -i -selection primary<CR><CR>
   nnoremap <C-V> :r !xclip -o -selection primary<CR><CR>
 
+" Vimagit
+  if getcwd() == $HOME
+    let g:magit_git_cmd="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+  endif
+
 " Automatically deletes all trailing whitespace on save.
   autocmd BufWritePre * %s/\s\+$//e
 
 " Ignore .gitignore files
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" When shortcut files are updated, renew bash and vifm configs with new material:
+"  autocmd BufWritePost ~/.config/bmdirs,~/.config/bmfiles !shortcuts
 
 " Update binds when sxhkdrc is updated.
   autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd

@@ -17,3 +17,12 @@ super + shift + x
   prompt "Do you want to shutdown the computer?" "sudo -A shutdown -h now"
 super + shift + BackSpace
   prompt "Do you want to reboot the computer?" "sudo -A shutdown -r now"
+
+# Function hotkeys
+# F2 is to restart wm config
+# Restart/rescan wifi/eth networks
+super + F5
+  sudo -A systemctl restart NetworkManager
+# Network manager interface
+super + F12
+  $TERMINAL -e nmtui

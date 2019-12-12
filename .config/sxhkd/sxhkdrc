@@ -13,3 +13,7 @@ super + i
 # More
 super + shift + Tab
   menuunicode
+super + shift + x
+  prompt "Do you want to shutdown the computer?" "sudo -A shutdown -h now"
+super + shift + BackSpace
+  prompt "Do you want to reboot the computer?" "sudo -A shutdown -r now"

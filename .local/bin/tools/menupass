@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# A rofi prompt script used as $SUDO_ASKPASS script
+# For example:
+#  './prompt "Do you want to shutdown?" "sudo -A shutdown -h now"'
+
+rofi -dmenu -password -location 1 -lines 1 -padding 5 -color-window \#282828 -p "$(printf "$1" | sed s/://)"

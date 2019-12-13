@@ -2,6 +2,11 @@ command=~/.local/bin/statusbar/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
+[music]
+label=🎼
+interval=once
+signal=11
+
 [news]
 label=📰
 interval=once

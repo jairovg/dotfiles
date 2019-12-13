@@ -4,4 +4,4 @@ setbg & # Set the background
 sxhkd & # Bind keys
 compton & # compton for transparency
 dunst & # Dunst for notifications
-
+mpdupdate &

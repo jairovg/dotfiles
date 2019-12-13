@@ -5,6 +5,8 @@ super + d
   rofi -combi-modi window,drun -show combi -modi combi
 super + r
   $TERMINAL -e $FILE
+super + m
+  $TERMINAL -e ncmpcpp
 super + n
   $TERMINAL -e newsboat
 super + i

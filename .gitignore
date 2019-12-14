@@ -1,0 +1,14 @@
+.Xauthority
+.cache
+.cfg
+.cfg-bkup
+.config/vim/autoload
+.config/google-chrome
+.config/vim/plugged
+.gnome
+.local/share/*
+!.local/share/applications
+.pki
+.ssh
+.viminfo
+.xsession-errors

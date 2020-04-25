@@ -45,6 +45,12 @@ call plug#end()
   set shiftwidth=2
   set expandtab
 
+" vim-markdown
+" Disable conceal regardless of conceallevel setting
+  let g:vim_markdown_conceal = 0
+" Disable folding configuration
+  let g:vim_markdown_folding_disabled = 1
+
 " Copy and paste to clipboard
   vnoremap <C-C> :w !xclip -i -selection primary<CR><CR>
   nnoremap <C-V> :r !xclip -o -selection primary<CR><CR>

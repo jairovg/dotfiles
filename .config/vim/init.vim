@@ -51,6 +51,34 @@ call plug#end()
 " Disable folding configuration
   let g:vim_markdown_folding_disabled = 1
 
+" Silver search
+  " Setup a default line numbers context
+  let g:ags_agcontext = 0
+  " Search for the word under cursor
+  nnoremap <Leader>s :Ags<Space>-C<Space>0<Space><C-R>=expand('<cword>')<CR><CR>
+  " Search for the visually selected text
+  vnoremap <Leader>s y:Ags<Space><C-R>='"' . escape(@", '"*?()[]{}.') . '"'<CR><CR>
+  " Run Ags
+  nnoremap <Leader>a :Ags<Space>
+  " Quit Ags
+  nnoremap <Leader><Leader>a :AgsQuit<CR>
+  " Default ag params
+  let g:ags_agargs = {
+    \ '--break'             : [ '', '' ],
+    \ '--color'             : [ '', '' ],
+    \ '--color-line-number' : [ '"1;30"', '' ],
+    \ '--color-match'       : [ '"32;40"', '' ],
+    \ '--color-path'        : [ '"1;31"', '' ],
+    \ '--column'            : [ '', '' ],
+    \ '--context'           : [ 'g:ags_agcontext', '-C' ],
+    \ '--filename'          : [ '', '' ],
+    \ '--ignore'            : [ 'package-lock.json', '--ignore' ],
+    \ '--group'             : [ '', '' ],
+    \ '--heading'           : [ '', '-H' ],
+    \ '--max-count'         : [ 'g:ags_agmaxcount', '-m' ],
+    \ '--numbers'           : [ '', '' ]
+    \ }
+
 " Copy and paste to clipboard
   vnoremap <C-C> :w !xclip -i -selection primary<CR><CR>
   nnoremap <C-V> :r !xclip -o -selection primary<CR><CR>

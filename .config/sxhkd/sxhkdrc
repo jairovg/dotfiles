@@ -20,6 +20,13 @@ super + shift + x
 super + shift + BackSpace
   prompt "Do you want to reboot the computer?" "sudo -A shutdown -r now"
 
+# Screenshots
+Print
+  maim ~/Pictures/$(date '+%y%m%d-%H%M-%S')-pic-full.png
+# Pick screenshot type
+shift + Print
+  maimpick
+
 # Function hotkeys
 # F2 is to restart wm config
 # Restart/rescan wifi/eth networks

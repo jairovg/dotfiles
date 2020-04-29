@@ -30,6 +30,27 @@
 #define gruvboxBg #282828
 #define gruvboxCc #ffffff
 
+/* maia dark */
+#define maia0 #222d31
+#define maia1 #ab4642
+#define maia2 #7e807e
+#define maia3 #f7ca88
+#define maia4 #7cafc2
+#define maia5 #ba8baf
+#define maia6 #1abb9b
+#define maia7 #d8d8d8
+#define maia8 #585858
+#define maia9 #ab4642
+#define maia10 #8d8f8d
+#define maia11 #f7ca88
+#define maia12 #7cafc2
+#define maia13 #ba8baf
+#define maia14 #1abb9b
+#define maia15 #f8f8f8
+#define maiaFg #d8d8d8
+#define maiaBg #222d31
+#define maiaCc #1abb9b
+
 !! Set the background, foreground and cursor colors as below:
 *.background: gruvboxBg
 *.foreground: gruvboxFg

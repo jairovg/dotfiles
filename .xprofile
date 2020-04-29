@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 setbg & # Set the background
+xrdb ${XDG_CONFIG_HOME:-$HOME}/.Xdefaults &
 sxhkd & # Bind keys
 compton & # compton for transparency
 dunst & # Dunst for notifications

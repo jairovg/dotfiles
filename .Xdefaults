@@ -51,6 +51,31 @@
 #define maiaBg #222d31
 #define maiaCc #1abb9b
 
+/* nord */
+#define nord0 #3b4252
+#define nord1 #bf616a
+#define nord2 #a3be8c
+#define nord3 #ebcb8b
+#define nord4 #81a1c1
+#define nord5 #b48ead
+#define nord6 #88c0d0
+#define nord7 #e5e9f0
+#define nord8 #4c566a
+#define nord9 #bf616a
+#define nord10 #a3be8c
+#define nord11 #ebcb8b
+#define nord12 #81a1c1
+#define nord13 #b48ead
+#define nord14 #8fbcbb
+#define nord15 #eceff4
+#define nordFg #d8dee9
+#define nordBg #2e3440
+#define nordCc #d8dee9
+
+!!#define nord2 #434c5e
+!!#define nord10 #5e81ac
+!!#define nord12 #d08770
+
 !! Set the background, foreground and cursor colors as below:
 *.background: gruvboxBg
 *.foreground: gruvboxFg

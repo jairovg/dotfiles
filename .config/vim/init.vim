@@ -85,7 +85,7 @@ call plug#end()
   nnoremap <C-V> :r !xclip -o -selection primary<CR><CR>
 
 " Vimagit & CTRLP
-  if getcwd() == $HOME
+  if getcwd() == $HOME && ! isdirectory('.git')
     let g:magit_git_cmd="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
     " Ignore .gitignore files
     let g:ctrlp_user_command = ['.cfg', 'cd %s && /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME ls-files -co --exclude-standard']

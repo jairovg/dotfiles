@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-getforecast() { ping -q -c 1 1.1.1.1 >/dev/null || exit 1
+getforecast() { ping -q -c 1 8.8.8.8 >/dev/null || exit 1
 curl -s "wttr.in/$LOCATION" > "$HOME/.local/share/weatherreport" || exit 1 ;}
 
 showweather() { printf "%s" "$(sed '16q;d' "$HOME/.local/share/weatherreport" | grep -wo "[0-9]*%" | sort -n | sed -e '$!d' | sed -e "s/^/☔ /g" | tr -d '\n')"

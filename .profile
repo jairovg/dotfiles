@@ -9,6 +9,8 @@ export BROWSER="google-chrome-stable"
 export FILE="ranger"
 export SUDO_ASKPASS="$HOME/.local/bin/tools/menupass"
 
+# Custom location for weather script
+export LOCATION=""
 # less/man colors
 export LESS=-R
 export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"; a="${a%_}"

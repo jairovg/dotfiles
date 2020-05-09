@@ -1,0 +1,13 @@
+configuration {
+    lines: 8;
+/*  Border width */
+    bw: 0;
+/*  Row height */
+    eh: 1;
+    hide-scrollbar: true;
+/*  icon-theme: ;*/
+/*  disable-history: false;*/
+/*  fullscreen: false;*/
+/*  fake-transparency: false;*/
+    theme: "color-16";
+}

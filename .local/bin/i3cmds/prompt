@@ -5,5 +5,5 @@
 # For example:
 # './prompt "Do you want to shutdown?" "shutdown -h now"'
 
-[ "$(printf "No\nYes" | rofi -dmenu -location 1 -lines 2 -padding 5 -color-window \#282828 -mesg "$1")" = "Yes"  ] && $2
+[ "$(printf "No\nYes" | rofi -dmenu -location 1 -lines 2 -mesg "$1")" = "Yes"  ] && $2
 

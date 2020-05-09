@@ -7,9 +7,9 @@ xclip -h > /dev/null || exit
 rofi --help > /dev/null || exit
 
 if [ -e ~/.config/fontawesome ]; then
-  chosen=$(grep -v "#" -h ~/.config/fontawesome ~/.config/emoji | rofi -dmenu -i -p "Select icon" -columns 4 -padding 5 -location 1 -lines 20 -color-window \#282828)
+  chosen=$(grep -v "#" -h ~/.config/fontawesome ~/.config/emoji | rofi -dmenu -i -p "Select icon" -columns 4 -location 1 -lines 20)
 else
-  chosen=$(grep -v "#" ~/.config/emoji | rofi -dmenu -i -p "Select icon" -columns 4 -padding 5 -location 1 -lines 20 -color-window \#282828)
+  chosen=$(grep -v "#" ~/.config/emoji | rofi -dmenu -i -p "Select icon" -columns 4 -location 1 -lines 20)
 fi
 
 [ "$chosen" != "" ] || exit

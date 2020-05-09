@@ -2,7 +2,7 @@
 super + Return
   $TERMINAL
 super + d
-  rofi -combi-modi window,drun -show combi -modi combi
+  rofi -combi-modi window,drun -show combi -modi combi -theme-str "#window \{ padding: 428; \}"
 super + r
   $TERMINAL -e $FILE
 super + m

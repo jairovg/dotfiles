@@ -35,3 +35,7 @@ super + F5
 # Network manager interface
 super + F12
   $TERMINAL -e nmtui
+
+# remove and restore polybar
+super + b
+  launch-polybar

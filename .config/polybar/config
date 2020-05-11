@@ -1,0 +1,29 @@
+; vim:ft=dosini
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+[colors]
+black = ${xrdb:color0:#282a2e}
+darkred = ${xrdb:color1:#a54242}
+darkgreen = ${xrdb:color2:#8c9440}
+darkyellow = ${xrdb:color3:#de935f}
+darkblue = ${xrdb:color4:#5f819d}
+darkmagenta = ${xrdb:color5:#85678f}
+darkcyan = ${xrdb:color6:#5e8d87}
+lightgray = ${xrdb:color7:#707880}
+gray = ${xrdb:color8:#373b41}
+red = ${xrdb:color9:#cc6666}
+green = ${xrdb:color10:#b5bd68}
+yellow = ${xrdb:color11:#f0c674}
+blue = ${xrdb:color12:#81a2be}
+magenta = ${xrdb:color13:#b294bb}
+cyan = ${xrdb:color14:#8abeb7}
+white = ${xrdb:color15:#c5c8c6}
+background = ${xrdb:color256:#1d1f21}
+foreground = ${xrdb:color257:#c5c8c6}

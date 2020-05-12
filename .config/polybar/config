@@ -100,3 +100,13 @@ label-urgent = %index%
 label-urgent-background = ${colors.white}
 label-urgent-underline = ${colors.darkcyan}
 label-urgent-padding = 1
+
+[module/clock]
+type = custom/script
+format = <label>
+format-prefix = 📅
+exec = clock
+click-left = BLOCK_BUTTON=1 clock
+click-middle = BLOCK_BUTTON=2 clock
+click-right = BLOCK_BUTTON=3 clock
+interval = 30

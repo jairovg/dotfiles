@@ -107,10 +107,36 @@ type = internal/xwindow
 label = %title:0:45:...%
 format-foreground = ${colors.blue}
 
+[module/date]
+type = internal/date
+interval = 60
+
+# American format
+;date = "%Y %b %d (%a)"
+
+# European format
+date = "%a %d/%m"
+
+time = "%I:%M%p"
+
+# If you're not living in a country where AM and PM is used you can add -alt to the time above this line and comment it using ;, then you can remove the -alt to the time under this line and uncomment it.
+;time-alt = " at %H:%M"
+;time-alt = %H:%M:%S
+;time-alt = %H:%M:%S
+
+format-prefix = "  "
+format-prefix-foreground = ${colors.white}
+format-underline = ${colors.blue}
+
+label = %date% %time%
+
 [module/clock]
 type = custom/script
+
 format = <label>
 format-prefix = 📅
+format-underline = ${colors.blue}
+
 exec = clock
 click-left = BLOCK_BUTTON=1 clock
 click-middle = BLOCK_BUTTON=2 clock

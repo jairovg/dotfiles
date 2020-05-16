@@ -107,6 +107,17 @@ type = internal/xwindow
 label = %title:0:45:...%
 format-foreground = ${colors.blue}
 
+[module/pkgupdates]
+type = custom/script
+
+format = <label>
+format-prefix = " "
+format-underline = ${colors.blue}
+
+exec = checkupdates | awk 'END {print NR " Updates"}'
+
+interval = 3600
+
 [module/date]
 type = internal/date
 interval = 60

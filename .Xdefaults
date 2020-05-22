@@ -102,28 +102,7 @@
 Sxiv.background: gruvboxBg
 Sxiv.foreground: gruvboxFg
 
-URxvt.intensityStyles: false
-URxvt.depth: 32
-URxvt.background: gruvboxBg
-URxvt.foreground: gruvbox15
-URxvt.font: xft:monospace:size=13, xft:Droid Sans Mono for Powerline:size=13
-URxvt.scrollBar: false
-URxvt.cursorColor: gruvboxCc
-URxvt.iso14755: false
-URxvt.iso14755_52: false
-
-!! Extensions, default Meta key: Alt
-URxvt.perl-ext-common: default,matcher,resize-font,url-select,keyboard-select
-URxvt.colorURL: #4682B4
-!! url-select
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.launcher: linkhandler
-URxvt.url-select.underline: true
-!! keyboard-select
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
-!! resize-font
-URxvt.resize-font.smaller: C-Down
-URxvt.resize-font.bigger: C-Up
-!! Matcher
-URxvt.url-launcher: linkhandler
-URxvt.matcher.button: 1
+St.background: gruvboxBg
+St.foreground: gruvbox15
+St.font: monospace:pixelsize=14:antialias=true:autohint=true
+St.fontalt0: Noto Mono for Powerline:pixelsize=14:antialias=true:autohint=true, JoyPixels:pixelsize=10:antialias=true:autohint=true

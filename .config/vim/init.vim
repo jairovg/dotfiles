@@ -25,6 +25,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mattn/emmet-vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'gabesoft/vim-ags'
+Plug 'yggdroot/indentline'
+Plug 'valloric/youcompleteme'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Some basics:

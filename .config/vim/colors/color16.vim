@@ -17,6 +17,7 @@ let g:colors_name = "color16"
 let s:color16_vim_version="0.0.1"
 set background=dark
 
+" Search for :let [{name1}, {name2}, ...] = {expr1}
 let s:nord0_gui = "#2E3440"
 let s:color0_gui = "#3B4252"
 let s:nord2_gui = "#434C5E"
@@ -48,6 +49,20 @@ let s:color11_term = "11"
 let s:color3_term = "3"
 let s:color2_term = "2"
 let s:color5_term = "5"
+
+"let s:nord1_term = "0"
+"let s:nord3_term = "8"
+"let s:nord5_term = "7"
+"let s:nord6_term = "15"
+"let s:nord7_term = "14"
+"let s:nord8_term = "6"
+"let s:nord9_term = "4"
+let s:nord10_term = "12" "In xresources is nord9
+"let s:nord11_term = "1"
+let s:nord12_term = "11" "In xresources is nord13
+"let s:nord13_term = "3"
+"let s:nord14_term = "2"
+"let s:nord15_term = "5"
 
 let s:color8_gui_brightened = [
   \ s:color8_gui,

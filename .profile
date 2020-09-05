@@ -7,6 +7,7 @@ export EDITOR="vim"
 export TERMINAL="st"
 export BROWSER="google-chrome-stable"
 export FILE="ranger"
+export RANGER_LOAD_DEFAULT_RC=false
 export SUDO_ASKPASS="$HOME/.local/bin/tools/menupass"
 
 # Custom location for weather script

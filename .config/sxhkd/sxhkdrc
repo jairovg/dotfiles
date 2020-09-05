@@ -9,6 +9,9 @@ super + m
   $TERMINAL -e ncmpcpp
 super + n
   $TERMINAL -e newsboat
+# Network manager interface
+super + shift + n
+  $TERMINAL -e sudo nmtui
 super + i
   $TERMINAL -e htop
 
@@ -32,9 +35,6 @@ shift + Print
 # Restart/rescan wifi/eth networks
 super + F5
   sudo -A systemctl restart NetworkManager
-# Network manager interface
-super + F12
-  $TERMINAL -e nmtui
 
 # remove and restore polybar
 super + b

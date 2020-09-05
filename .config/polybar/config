@@ -49,18 +49,24 @@ border-size = 0
 border-color = ${colors.white}
 
 padding-left = 0
-padding-right = 0
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 1
 
 font-0 = mono:pixelsize=9;1
-font-1 = Inconsolata Nerd Font:size=8;1
+font-1 = Inconsolata Nerd Font:size=10;1
 font-2 = Noto Color Emoji:scale=10:style=Regular;2
 font-3 = Symbola:pixelsize=9;1
 
 
+; Other modules: xkeyboard filesystem xbacklight backlight-acpi cpu memory temperature powermenu weather
 modules-left = i3 xwindow
+;modules-center =
+modules-right = pkgupdates cpu memory battery wlan eth date
+
+tray-position = right
+tray-padding = 0
 
 [module/i3]
 type = internal/i3
@@ -115,8 +121,148 @@ format-prefix = " "
 format-underline = ${colors.blue}
 
 exec = checkupdates | awk 'END {print NR " Updates"}'
+click-left = $TERMINAL popupgrade &
 
 interval = 3600
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label>  <bar>
+label = ﯧ
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = ${colors.white}
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = ${colors.white}
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${colors.gray}
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+
+format = <ramp-coreload>  <label>
+format-underline = ${colors.blue}
+label = %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.white}
+format-underline = ${colors.blue}
+label = %percentage_used%%
+
+[module/volume]
+type = internal/alsa
+
+format-volume = <label-volume> <bar-volume>
+label-volume = 
+label-volume-foreground = ${colors.foreground}
+
+format-muted-prefix = " "
+format-muted-foreground = ${colors.gray}
+label-muted = muted
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${colors.blue}
+bar-volume-foreground-1 = ${colors.blue}
+bar-volume-foreground-2 = ${colors.green}
+bar-volume-foreground-3 = ${colors.green}
+bar-volume-foreground-4 = ${colors.green}
+bar-volume-foreground-5 = ${colors.yellow}
+bar-volume-foreground-6 = ${colors.red}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = =
+bar-volume-fill-font = 2
+bar-volume-empty = =
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.gray}
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ADP1
+full-at = 98
+
+;format-charging = Charging... <label-charging>
+format-charging = <animation-charging>  <label-charging>
+format-charging-underline = ${colors.blue}
+
+;format-discharging = <label-discharging>
+format-discharging = <ramp-capacity>  <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+
+format-full = <ramp-capacity>  <label-full>
+format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.white}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = ${colors.white}
+animation-charging-framerate = 500
+
+[module/wlan]
+type = internal/network
+interface = wlp2s0
+interval = 3.0
+
+format-connected = 直 <label-connected>
+format-connected-underline = ${colors.blue}
+label-connected = %essid%
+
+;format-disconnected =
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+label-disconnected = 睊no wifi
+label-disconnected-foreground = ${colors.white}
+
+; <ramp-signal>
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.white}
+
+[module/eth]
+type = internal/network
+interface = enp57s0u1u1
+interval = 3.0
+
+format-connected-underline = ${colors.blue}
+;format-connected-underline = ${colors.green}
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.white}
+label-connected = %local_ip%
+
+;format-disconnected =
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected =  %ifname%
+label-disconnected-foreground = ${colors.white}
 
 [module/date]
 type = internal/date

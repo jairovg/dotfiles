@@ -1,108 +1,12 @@
 !! Define color schemes to be used
-/* name   dark  light */
-/* black  0 8 */
-/* red    1 9 */
-/* green  2 10 */
-/* yellow 3 11 */
-/* blue   4 12 */
-/* purple 5 13 */
-/* cyan   6 14 */
-/* white  7 15 */
+!#include ".config/Xresources.d/gruvbox-dark"
+!#include ".config/Xresources.d/maia-dark"
+#include ".config/Xresources.d/nord"
 
-/* gruvbox dark */
-#define gruvbox0 #1d2021
-#define gruvbox1 #cc241d
-#define gruvbox2 #98971a
-#define gruvbox3 #d79921
-#define gruvbox4 #458588
-#define gruvbox5 #b16286
-#define gruvbox6 #689d6a
-#define gruvbox7 #a89984
-#define gruvbox8 #928374
-#define gruvbox9 #fb4934
-#define gruvbox10 #b8bb26
-#define gruvbox11 #fabd2f
-#define gruvbox12 #83a598
-#define gruvbox13 #d3869b
-#define gruvbox14 #8ec07c
-#define gruvbox15 #ebdbb2
-#define gruvboxFg #ffffff
-#define gruvboxBg #282828
-#define gruvboxCc #ffffff
+!Sxiv.background: nordBg
+!Sxiv.foreground: nordFg
 
-/* maia dark */
-#define maia0 #222d31
-#define maia1 #ab4642
-#define maia2 #7e807e
-#define maia3 #f7ca88
-#define maia4 #7cafc2
-#define maia5 #ba8baf
-#define maia6 #1abb9b
-#define maia7 #d8d8d8
-#define maia8 #585858
-#define maia9 #ab4642
-#define maia10 #8d8f8d
-#define maia11 #f7ca88
-#define maia12 #7cafc2
-#define maia13 #ba8baf
-#define maia14 #1abb9b
-#define maia15 #f8f8f8
-#define maiaFg #d8d8d8
-#define maiaBg #222d31
-#define maiaCc #1abb9b
-
-/* nord */
-#define nord0 #3b4252
-#define nord1 #bf616a
-#define nord2 #a3be8c
-#define nord3 #ebcb8b
-#define nord4 #81a1c1
-#define nord5 #b48ead
-#define nord6 #88c0d0
-#define nord7 #e5e9f0
-#define nord8 #4c566a
-#define nord9 #bf616a
-#define nord10 #a3be8c
-#define nord11 #ebcb8b
-#define nord12 #81a1c1
-#define nord13 #b48ead
-#define nord14 #8fbcbb
-#define nord15 #eceff4
-#define nordFg #d8dee9
-#define nordBg #2e3440
-#define nordCc #d8dee9
-
-!!#define nord2 #434c5e
-!!#define nord10 #5e81ac
-!!#define nord12 #d08770
-
-!! Set the background, foreground and cursor colors as below:
-*.background: gruvboxBg
-*.foreground: gruvboxFg
-*.cursorColor: gruvboxCc
-
-!! Set default color scheme
-*.color0: gruvbox0
-*.color1: gruvbox1
-*.color2: gruvbox2
-*.color3: gruvbox3
-*.color4: gruvbox4
-*.color5: gruvbox5
-*.color6: gruvbox6
-*.color7: gruvbox7
-*.color8: gruvbox8
-*.color9: gruvbox9
-*.color10: gruvbox10
-*.color11: gruvbox11
-*.color12: gruvbox12
-*.color13: gruvbox13
-*.color14: gruvbox14
-*.color15: gruvbox15
-
-Sxiv.background: gruvboxBg
-Sxiv.foreground: gruvboxFg
-
-St.background: gruvboxBg
-St.foreground: gruvbox15
+!St.background: nordBg
+!St.foreground: nord15
 St.font: monospace:pixelsize=14:antialias=true:autohint=true
 St.fontalt0: Noto Mono for Powerline:pixelsize=14:antialias=true:autohint=true, JoyPixels:pixelsize=10:antialias=true:autohint=true

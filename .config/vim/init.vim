@@ -34,12 +34,19 @@ call plug#end()
   syntax on
   set encoding=utf-8
   set number relativenumber
+  set t_Co=256
 
 " Disables automatic commenting on newline:
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " vim-airline
   let g:airline_powerline_fonts=1
+
+ " Vim colors
+  let g:color16_uniform_status_lines = 1
+  let g:color16_bold_vertical_split_line = 1
+  let g:color16_uniform_diff_background = 1
+  colorscheme color16
 
 " Set tab as spaces
   set tabstop=2

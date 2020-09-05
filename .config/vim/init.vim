@@ -26,6 +26,7 @@ Plug 'mattn/emmet-vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'gabesoft/vim-ags'
 Plug 'yggdroot/indentline'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 " Some basics:

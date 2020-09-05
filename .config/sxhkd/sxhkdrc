@@ -12,6 +12,8 @@ super + n
 # Network manager interface
 super + shift + n
   $TERMINAL -e sudo nmtui
+super + shift + {m,u}
+	{menumount,menuumount}
 super + i
   $TERMINAL -e htop
 

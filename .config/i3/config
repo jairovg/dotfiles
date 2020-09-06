@@ -187,6 +187,8 @@ for_window [class="Gimp"] move workspace $ws5
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
+for_window [title="Microsoft Teams Notification" class="microsoft teams - preview"] floating enable
+for_window [title="Microsoft Teams Notification" class="Microsoft Teams - Preview"] floating enable
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

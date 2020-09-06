@@ -2,8 +2,11 @@
 .cache
 .cfg
 .cfg-bkup*
-.config/vim/autoload/plug.vim
+.config/Code*
 .config/google-chrome
+.config/Microsoft*
+.config/Slack
+.config/vim/autoload/plug.vim
 .config/vim/plugged
 .gnome
 .local/share/*

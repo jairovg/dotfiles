@@ -117,13 +117,12 @@ format-foreground = ${colors.blue}
 type = custom/script
 
 format = <label>
-format-prefix = " "
 format-underline = ${colors.blue}
 
-exec = checkupdates | awk 'END {print NR " Updates"}'
+exec = updates-pacman-aurhelper
 click-left = $TERMINAL popupgrade &
 
-interval = 3600
+interval = 600
 
 [module/xbacklight]
 type = internal/xbacklight

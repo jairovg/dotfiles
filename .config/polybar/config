@@ -119,7 +119,7 @@ type = custom/script
 format = <label>
 format-underline = ${colors.blue}
 
-exec = updates-pacman-aurhelper
+exec = pacaurpackages
 click-left = $TERMINAL popupgrade &
 
 interval = 600

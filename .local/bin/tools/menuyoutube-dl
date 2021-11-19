@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Give a menu prompt to download a youtube video
+
+url=$(rofi -dmenu -location 1 -lines 1 -p "Enter youtube video url")
+formats=$(youtube-dl --list-formats "$url" 2> /dev/null | awk 'NR > 3')
+
+[ "$formats" != "" ] || exit
+
+chosen=$(echo "$formats" | rofi -dmenu -location 1 -lines 10 -p "Select the format to download" | grep -Eo '^[0-9]{1,}')
+template="%(title)s-%(id)s.%(ext)s"
+output=$(rofi -dmenu -location 1 -lines 1 -p "Enter the output template, defaults to "$template"")
+
+[ "$output" != "" ] || output="$template"
+
+notify-send " Downloading video"
+
+youtube-dl --format "$chosen" -o "~/Videos/"$output"" ""$url""
+
+notify-send " Video saved to ~/Videos"

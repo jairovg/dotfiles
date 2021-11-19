@@ -24,6 +24,7 @@ Plug 'kovetskiy/sxhkd-vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mattn/emmet-vim'
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'gabesoft/vim-ags'
 Plug 'yggdroot/indentline'
@@ -44,12 +45,13 @@ call plug#end()
   let g:airline_powerline_fonts=1
 
  " Vim colors
-  let g:color16_uniform_status_lines = 1
-  let g:color16_bold_vertical_split_line = 1
-  let g:color16_uniform_diff_background = 1
+  let g:nord_uniform_status_lines = 1
+  let g:nord_bold_vertical_split_line = 1
+  let g:nord_cursor_line_number_background = 1
+  let g:nord_uniform_diff_background = 1
   set t_8f=[38;2;%lu;%lu;%lum        " set foreground color
   set t_8b=[48;2;%lu;%lu;%lum        " set background color
-  colorscheme color16
+  colorscheme nord
   set t_Co=256
   set termguicolors                    " Enable GUI colors for the terminal to get truecolor
 

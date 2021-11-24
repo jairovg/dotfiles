@@ -1,3 +1,4 @@
+*.swp
 .Xauthority
 .cache
 .cfg
@@ -20,3 +21,4 @@
 .viminfo
 .xsession-errors
 .yarn
+.DS_Store

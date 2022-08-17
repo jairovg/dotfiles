@@ -28,6 +28,7 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'gabesoft/vim-ags'
 Plug 'yggdroot/indentline'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
@@ -119,6 +120,21 @@ call plug#end()
 " Automatically deletes all trailing whitespace on save.
   autocmd BufWritePre * %s/\s\+$//e
 
+" COC plugins
+  let g:coc_global_extensions = [
+    \ 'coc-marketplace',
+    \ 'coc-gitignore',
+    \ 'coc-tsserver',
+    \ 'coc-json',
+    \ 'coc-format-json',
+    \ 'coc-html',
+    \ 'coc-css',
+    \ 'coc-cssmodules',
+    \ 'coc-vetur',
+    \ 'coc-prettier',
+    \ 'coc-eslint',
+    \ 'coc-stylelint',
+  \ ]
 
 " When shortcut files are updated, renew bash and vifm configs with new material:
 "  autocmd BufWritePost ~/.config/bmdirs,~/.config/bmfiles !shortcuts
